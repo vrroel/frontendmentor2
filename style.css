@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  /* primary colors */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* neutral colors */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: .5rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  color: var(--dark-grayish-blue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.product-type {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
+  line-height: 1;
+  margin: 1.2rem 0;
+}
+
+.product-desc {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.prices {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  color: var(--dark-cyan);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.btn:hover {
+  background:hsl(158, 40%, 29%);
+}
+
+.btn img {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+@media (min-width: 700px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* font-family: "Fraunces", serif;
+font-family: "Montserrat", sans-serif; */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
